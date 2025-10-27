@@ -3,11 +3,26 @@ set dotenv-load := true
 set dotenv-filename := 'dotenv-unit'
 set dotenv-required := true
 
-with_perl5lib := 'export PERL5LIB=${PWD}/lib:${PWD}/local/lib/perl5'
-perlcritic := 'local/bin/perlcritic --profile ${PWD}/.perlcritic'
-perlimports := 'local/bin/perlimports -i --no-preserve-unused --libs lib --ignore-modules-filename ${PWD}/.perlimports-ignore -f '
-perltidy := 'local/bin/perltidier -i=2 -pt=2 -bt=2 -pvt=2 -b -cs '
-yath := 'local/bin/yath --max-open-jobs=1000'
+export PERL5LIB := \
+  justfile_directory() / "lib" + ":" + \
+  justfile_directory() / "local" / "lib" / "perl5"
+
+export LOCAL_BIN := justfile_directory() / "local" / "bin"
+
+export PATH := LOCAL_BIN + ":" + env_var("PATH")
+
+PERLCRITIC := "perlcritic" + \
+  " --profile " + justfile_directory() / ".perlcritic"
+
+PERLIMPORTS := "perlimports" + \
+  " -i --no-preserve-unused" + \
+  " --libs lib" + \
+  " --ignore-modules-filename " + \
+  justfile_directory() / ".perlimports-ignore" + " -f"
+
+PERLTIDY := 'perltidier -i=2 -pt=2 -bt=2 -pvt=2 -b -cs '
+
+YATH := 'yath --max-open-jobs=1000'
 
 default:
     @just --list
@@ -19,61 +34,58 @@ all:
 
 # Iniitialize carton.
 carton:
-    mkdir -p local;
+    mkdir -p local/bin;
+    curl -L https://cpanmin.us/ -o local/bin/cpanm
+    @chmod +x local/bin/cpanm
     env -u PERL5LIB cpanm -l local -n -f Carton
 
 # perl -c on all files.
 check:
-    @{{ with_perl5lib }}; \
     for i in `find lib -name \*.pm`; do perl -c $i; done
-    @{{ with_perl5lib }}; \
     for i in `find t -name \*.t`; do perl -c $i; done
 
 # perlcritic on all files - see .perlcritic for exceptions.
 critic:
-    @{{ with_perl5lib }}; \
-    find lib -name \*.pm -print0 | xargs -0 {{ perlcritic }}
-    @{{ with_perl5lib }}; \
-    find t -name \*.t -print0 | xargs -0 {{ perlcritic }} --theme=tests
+    find lib -name \*.pm -print0 | xargs -0 {{ PERLCRITIC }}
+    find t -name \*.t -print0 | xargs -0 {{ PERLCRITIC }} --theme=tests
 
 # Install carton dependencies; follows "carton" rule.
 deps:
-    @{{ with_perl5lib }}; \
-    local/bin/carton install
+    carton install
 
 # Update all carton dependencies.
 update:
-    @{{ with_perl5lib }}; \
-    local/bin/carton update
+    carton update
 
 # perlimports on all files.
 imports:
-    @{{ with_perl5lib }}; \
-    find lib -name \*.pm -print0 | xargs -0 {{ perlimports }} 2>/dev/null
-    @{{ with_perl5lib }}; \
-    find t -name \*.t -print0 | xargs -0 {{ perlimports }} 2>/dev/null
+    find lib -name \*.pm -print0 | xargs -0 {{ PERLIMPORTS }} 2>/dev/null
+    find t -name \*.t -print0 | xargs -0 {{ PERLIMPORTS }} 2>/dev/null
 
-# Open a perl repl with lib path set for this project's files.
+# Open a perl repl.
 repl:
-    @{{ with_perl5lib }}; \
     perl -de 0
+
+# Run a command.
+run *CMD:
+    {{ CMD }}
 
 # Run all tests.
 test:
-    @{{ with_perl5lib }}; \
-    find t -name \*.t -print0 | xargs -0 {{ yath }}
+    find t -name \*.t -print0 | xargs -0 {{ YATH }}
 
 # perltidy on all files.
 tidy:
-    @{{ with_perl5lib }}; \
-    find . -name \*.pm -print0 | xargs -0 {{ perltidy }} 2>/dev/null
-    @{{ with_perl5lib }}; \
-    find . -name \*.t -print0 | xargs -0 {{ perltidy }} 2>/dev/null
+    find . -name \*.pm -print0 | xargs -0 {{ PERLTIDY }} 2>/dev/null
+    find . -name \*.t -print0 | xargs -0 {{ PERLTIDY }} 2>/dev/null
     @find -name \*bak -delete
     @find -name \*tdy -delete
     @find -name \*.ERR -delete
 
 # Run a single test; e.g. "just yath t/00-test.t".
 yath TEST:
-    @{{ with_perl5lib }}; \
-    {{ yath }} {{ TEST }}
+    {{ YATH }} {{ TEST }}
+
+# Set up everything for development from nothing.
+setup:
+    just create-users create-databases alter-grants apply-schema carton deps
