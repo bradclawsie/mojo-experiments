@@ -255,14 +255,6 @@ DISTRIBUTIONS
       Clone 0.47
     requirements:
       ExtUtils::MakeMaker 0
-  Clone-Choose-0.010
-    pathname: H/HE/HERMES/Clone-Choose-0.010.tar.gz
-    provides:
-      Clone::Choose 0.010
-    requirements:
-      ExtUtils::MakeMaker 0
-      Storable 0
-      perl 5.008001
   Clone-PP-1.08
     pathname: N/NE/NEILB/Clone-PP-1.08.tar.gz
     provides:
@@ -302,250 +294,6 @@ DISTRIBUTIONS
       overload 0
       strict 0
       warnings 0
-  Crypt-JWT-0.037
-    pathname: M/MI/MIK/Crypt-JWT-0.037.tar.gz
-    provides:
-      Crypt::JWT 0.037
-      Crypt::KeyWrap 0.037
-    requirements:
-      Compress::Raw::Zlib 0
-      CryptX 0.067
-      Exporter 5.57
-      ExtUtils::MakeMaker 0
-      JSON 0
-      Scalar::Util 0
-      Test::More 0.88
-      perl 5.006
-  CryptX-0.087
-    pathname: M/MI/MIK/CryptX-0.087.tar.gz
-    provides:
-      Crypt::AuthEnc 0.087
-      Crypt::AuthEnc::CCM 0.087
-      Crypt::AuthEnc::ChaCha20Poly1305 0.087
-      Crypt::AuthEnc::EAX 0.087
-      Crypt::AuthEnc::GCM 0.087
-      Crypt::AuthEnc::OCB 0.087
-      Crypt::Checksum 0.087
-      Crypt::Checksum::Adler32 0.087
-      Crypt::Checksum::CRC32 0.087
-      Crypt::Cipher 0.087
-      Crypt::Cipher::AES 0.087
-      Crypt::Cipher::Anubis 0.087
-      Crypt::Cipher::Blowfish 0.087
-      Crypt::Cipher::CAST5 0.087
-      Crypt::Cipher::Camellia 0.087
-      Crypt::Cipher::DES 0.087
-      Crypt::Cipher::DES_EDE 0.087
-      Crypt::Cipher::IDEA 0.087
-      Crypt::Cipher::KASUMI 0.087
-      Crypt::Cipher::Khazad 0.087
-      Crypt::Cipher::MULTI2 0.087
-      Crypt::Cipher::Noekeon 0.087
-      Crypt::Cipher::RC2 0.087
-      Crypt::Cipher::RC5 0.087
-      Crypt::Cipher::RC6 0.087
-      Crypt::Cipher::SAFERP 0.087
-      Crypt::Cipher::SAFER_K128 0.087
-      Crypt::Cipher::SAFER_K64 0.087
-      Crypt::Cipher::SAFER_SK128 0.087
-      Crypt::Cipher::SAFER_SK64 0.087
-      Crypt::Cipher::SEED 0.087
-      Crypt::Cipher::Serpent 0.087
-      Crypt::Cipher::Skipjack 0.087
-      Crypt::Cipher::Twofish 0.087
-      Crypt::Cipher::XTEA 0.087
-      Crypt::Digest 0.087
-      Crypt::Digest::BLAKE2b_160 0.087
-      Crypt::Digest::BLAKE2b_256 0.087
-      Crypt::Digest::BLAKE2b_384 0.087
-      Crypt::Digest::BLAKE2b_512 0.087
-      Crypt::Digest::BLAKE2s_128 0.087
-      Crypt::Digest::BLAKE2s_160 0.087
-      Crypt::Digest::BLAKE2s_224 0.087
-      Crypt::Digest::BLAKE2s_256 0.087
-      Crypt::Digest::CHAES 0.087
-      Crypt::Digest::Keccak224 0.087
-      Crypt::Digest::Keccak256 0.087
-      Crypt::Digest::Keccak384 0.087
-      Crypt::Digest::Keccak512 0.087
-      Crypt::Digest::MD2 0.087
-      Crypt::Digest::MD4 0.087
-      Crypt::Digest::MD5 0.087
-      Crypt::Digest::RIPEMD128 0.087
-      Crypt::Digest::RIPEMD160 0.087
-      Crypt::Digest::RIPEMD256 0.087
-      Crypt::Digest::RIPEMD320 0.087
-      Crypt::Digest::SHA1 0.087
-      Crypt::Digest::SHA224 0.087
-      Crypt::Digest::SHA256 0.087
-      Crypt::Digest::SHA384 0.087
-      Crypt::Digest::SHA3_224 0.087
-      Crypt::Digest::SHA3_256 0.087
-      Crypt::Digest::SHA3_384 0.087
-      Crypt::Digest::SHA3_512 0.087
-      Crypt::Digest::SHA512 0.087
-      Crypt::Digest::SHA512_224 0.087
-      Crypt::Digest::SHA512_256 0.087
-      Crypt::Digest::SHAKE 0.087
-      Crypt::Digest::Tiger192 0.087
-      Crypt::Digest::Whirlpool 0.087
-      Crypt::KeyDerivation 0.087
-      Crypt::Mac 0.087
-      Crypt::Mac::BLAKE2b 0.087
-      Crypt::Mac::BLAKE2s 0.087
-      Crypt::Mac::F9 0.087
-      Crypt::Mac::HMAC 0.087
-      Crypt::Mac::OMAC 0.087
-      Crypt::Mac::PMAC 0.087
-      Crypt::Mac::Pelican 0.087
-      Crypt::Mac::Poly1305 0.087
-      Crypt::Mac::XCBC 0.087
-      Crypt::Misc 0.087
-      Crypt::Mode 0.087
-      Crypt::Mode::CBC 0.087
-      Crypt::Mode::CFB 0.087
-      Crypt::Mode::CTR 0.087
-      Crypt::Mode::ECB 0.087
-      Crypt::Mode::OFB 0.087
-      Crypt::PK 0.087
-      Crypt::PK::DH 0.087
-      Crypt::PK::DSA 0.087
-      Crypt::PK::ECC 0.087
-      Crypt::PK::Ed25519 0.087
-      Crypt::PK::RSA 0.087
-      Crypt::PK::X25519 0.087
-      Crypt::PRNG 0.087
-      Crypt::PRNG::ChaCha20 0.087
-      Crypt::PRNG::Fortuna 0.087
-      Crypt::PRNG::RC4 0.087
-      Crypt::PRNG::Sober128 0.087
-      Crypt::PRNG::Yarrow 0.087
-      Crypt::Stream::ChaCha 0.087
-      Crypt::Stream::RC4 0.087
-      Crypt::Stream::Rabbit 0.087
-      Crypt::Stream::Salsa20 0.087
-      Crypt::Stream::Sober128 0.087
-      Crypt::Stream::Sosemanuk 0.087
-      CryptX 0.087
-      Math::BigInt::LTM 0.087
-    requirements:
-      ExtUtils::MakeMaker 0
-      Math::BigInt 0
-      perl 5.006
-  DBD-Pg-3.18.0
-    pathname: T/TU/TURNSTEP/DBD-Pg-3.18.0.tar.gz
-    provides:
-      Bundle::DBD::Pg v3.18.0
-      DBD::Pg v3.18.0
-    requirements:
-      DBI 1.614
-      ExtUtils::MakeMaker 6.58
-      File::Temp 0
-      Test::More 0.88
-      Time::HiRes 0
-      version 0
-  DBI-1.647
-    pathname: H/HM/HMBRAND/DBI-1.647.tgz
-    provides:
-      Bundle::DBI 12.008696
-      DBD::DBM 0.08
-      DBD::DBM::Statement 0.08
-      DBD::DBM::Table 0.08
-      DBD::DBM::db 0.08
-      DBD::DBM::dr 0.08
-      DBD::DBM::st 0.08
-      DBD::ExampleP 12.014311
-      DBD::ExampleP::db 12.014311
-      DBD::ExampleP::dr 12.014311
-      DBD::ExampleP::st 12.014311
-      DBD::File 0.44
-      DBD::File::DataSource::File 0.44
-      DBD::File::DataSource::Stream 0.44
-      DBD::File::Statement 0.44
-      DBD::File::Table 0.44
-      DBD::File::TableSource::FileSystem 0.44
-      DBD::File::db 0.44
-      DBD::File::dr 0.44
-      DBD::File::st 0.44
-      DBD::Gofer 0.015327
-      DBD::Gofer::Policy::Base 0.010088
-      DBD::Gofer::Policy::classic 0.010088
-      DBD::Gofer::Policy::pedantic 0.010088
-      DBD::Gofer::Policy::rush 0.010088
-      DBD::Gofer::Transport::Base 0.014121
-      DBD::Gofer::Transport::corostream undef
-      DBD::Gofer::Transport::null 0.010088
-      DBD::Gofer::Transport::pipeone 0.010088
-      DBD::Gofer::Transport::stream 0.014599
-      DBD::Gofer::db 0.015327
-      DBD::Gofer::dr 0.015327
-      DBD::Gofer::st 0.015327
-      DBD::Mem 0.001
-      DBD::Mem::DataSource 0.001
-      DBD::Mem::Statement 0.001
-      DBD::Mem::Table 0.001
-      DBD::Mem::db 0.001
-      DBD::Mem::dr 0.001
-      DBD::Mem::st 0.001
-      DBD::NullP 12.014715
-      DBD::NullP::db 12.014715
-      DBD::NullP::dr 12.014715
-      DBD::NullP::st 12.014715
-      DBD::Proxy 0.2004
-      DBD::Proxy::RPC::PlClient 0.2004
-      DBD::Proxy::db 0.2004
-      DBD::Proxy::dr 0.2004
-      DBD::Proxy::st 0.2004
-      DBD::Sponge 12.010003
-      DBD::Sponge::db 12.010003
-      DBD::Sponge::dr 12.010003
-      DBD::Sponge::st 12.010003
-      DBDI 12.015129
-      DBI 1.647
-      DBI::Const::GetInfo::ANSI 2.008697
-      DBI::Const::GetInfo::ODBC 2.011374
-      DBI::Const::GetInfoReturn 2.008697
-      DBI::Const::GetInfoType 2.008697
-      DBI::DBD 12.015129
-      DBI::DBD::Metadata 2.014214
-      DBI::DBD::SqlEngine 0.06
-      DBI::DBD::SqlEngine::DataSource 0.06
-      DBI::DBD::SqlEngine::Statement 0.06
-      DBI::DBD::SqlEngine::Table 0.06
-      DBI::DBD::SqlEngine::TableSource 0.06
-      DBI::DBD::SqlEngine::TieMeta 0.06
-      DBI::DBD::SqlEngine::TieTables 0.06
-      DBI::DBD::SqlEngine::db 0.06
-      DBI::DBD::SqlEngine::dr 0.06
-      DBI::DBD::SqlEngine::st 0.06
-      DBI::Gofer::Execute 0.014283
-      DBI::Gofer::Request 0.012537
-      DBI::Gofer::Response 0.011566
-      DBI::Gofer::Serializer::Base 0.009950
-      DBI::Gofer::Serializer::DataDumper 0.009950
-      DBI::Gofer::Serializer::Storable 0.015586
-      DBI::Gofer::Transport::Base 0.012537
-      DBI::Gofer::Transport::pipeone 0.012537
-      DBI::Gofer::Transport::stream 0.012537
-      DBI::Profile 2.015065
-      DBI::ProfileData 2.010008
-      DBI::ProfileDumper 2.015325
-      DBI::ProfileDumper::Apache 2.014121
-      DBI::ProfileSubs 0.009396
-      DBI::ProxyServer 0.3005
-      DBI::ProxyServer::db 0.3005
-      DBI::ProxyServer::dr 0.3005
-      DBI::ProxyServer::st 0.3005
-      DBI::SQL::Nano 1.015544
-      DBI::SQL::Nano::Statement_ 1.015544
-      DBI::SQL::Nano::Table_ 1.015544
-      DBI::Util::CacheMemory 0.010315
-      DBI::Util::_accessor 0.009479
-      DBI::common 1.647
-    requirements:
-      ExtUtils::MakeMaker 6.48
-      Test::Simple 0.90
-      perl 5.008001
   Data-OptList-0.114
     pathname: R/RJ/RJBS/Data-OptList-0.114.tar.gz
     provides:
@@ -812,15 +560,6 @@ DISTRIBUTIONS
       IPC::Run3 0
       parent 0
       perl 5.008001
-  Hash-Merge-0.302
-    pathname: H/HE/HERMES/Hash-Merge-0.302.tar.gz
-    provides:
-      Hash::Merge 0.302
-    requirements:
-      Clone::Choose 0.008
-      ExtUtils::MakeMaker 6.64
-      Scalar::Util 0
-      perl 5.008001
   IPC-Run3-0.049
     pathname: R/RJ/RJBS/IPC-Run3-0.049.tar.gz
     provides:
@@ -836,14 +575,6 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008001
-  JSON-4.10
-    pathname: I/IS/ISHIGAKI/JSON-4.10.tar.gz
-    provides:
-      JSON 4.10
-      JSON::Backend::PP 4.10
-    requirements:
-      ExtUtils::MakeMaker 0
-      Test::More 0
   Lingua-EN-Inflect-1.905
     pathname: D/DC/DCONWAY/Lingua-EN-Inflect-1.905.tar.gz
     provides:
@@ -1142,36 +873,6 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.006000
-  Mojo-Pg-4.28
-    pathname: S/SR/SRI/Mojo-Pg-4.28.tar.gz
-    provides:
-      Mojo::Pg 4.28
-      Mojo::Pg::Database undef
-      Mojo::Pg::Migrations undef
-      Mojo::Pg::PubSub undef
-      Mojo::Pg::Results undef
-      Mojo::Pg::Transaction undef
-    requirements:
-      DBD::Pg 3.007004
-      ExtUtils::MakeMaker 0
-      Mojolicious 8.50
-      SQL::Abstract::Pg 1.0
-      perl 5.016
-  Mojo-Redis-3.29
-    pathname: J/JH/JHTHORSEN/Mojo-Redis-3.29.tar.gz
-    provides:
-      Mojo::Redis 3.29
-      Mojo::Redis::Cache undef
-      Mojo::Redis::Connection undef
-      Mojo::Redis::Connection::Offline undef
-      Mojo::Redis::Cursor undef
-      Mojo::Redis::Database undef
-      Mojo::Redis::PubSub undef
-    requirements:
-      ExtUtils::MakeMaker 0
-      Mojolicious 8.50
-      Protocol::Redis::Faster 0.002
-      perl 5.016
   Mojolicious-9.42
     pathname: S/SR/SRI/Mojolicious-9.42.tar.gz
     provides:
@@ -2196,26 +1897,6 @@ DISTRIBUTIONS
       locale 0
       parent 0
       perl 5.008001
-  Protocol-Redis-1.0021
-    pathname: U/UN/UNDEF/Protocol-Redis-1.0021.tar.gz
-    provides:
-      Protocol::Redis 1.0021
-      Protocol::Redis::Test undef
-    requirements:
-      Carp 0
-      ExtUtils::MakeMaker 0
-      Test::More 0.94
-      perl 5.008001
-  Protocol-Redis-Faster-0.003
-    pathname: D/DB/DBOOK/Protocol-Redis-Faster-0.003.tar.gz
-    provides:
-      Protocol::Redis::Faster 0.003
-    requirements:
-      Carp 0
-      ExtUtils::MakeMaker 0
-      Protocol::Redis 1.0000
-      parent 0
-      perl 5.008001
   Readonly-2.05
     pathname: S/SA/SANKO/Readonly-2.05.tar.gz
     provides:
@@ -2263,41 +1944,6 @@ DISTRIBUTIONS
     requirements:
       Exporter 5.57
       perl 5.006
-  SQL-Abstract-2.000001
-    pathname: M/MS/MSTROUT/SQL-Abstract-2.000001.tar.gz
-    provides:
-      Chunkstrumenter undef
-      DBIx::Class::SQLMaker::Role::SQLA2Passthrough undef
-      SQL::Abstract 2.000001
-      SQL::Abstract::Formatter undef
-      SQL::Abstract::Parts undef
-      SQL::Abstract::Plugin::BangOverrides undef
-      SQL::Abstract::Plugin::ExtraClauses undef
-      SQL::Abstract::Reference undef
-      SQL::Abstract::Role::Plugin undef
-      SQL::Abstract::Test undef
-      SQL::Abstract::Tree undef
-    requirements:
-      Exporter 5.57
-      ExtUtils::MakeMaker 0
-      Hash::Merge 0.12
-      List::Util 0
-      MRO::Compat 0.12
-      Moo 2.000001
-      Scalar::Util 0
-      Sub::Quote 2.000001
-      Test::Builder::Module 0.84
-      Test::Deep 0.101
-      Text::Balanced 2.00
-      perl 5.006
-  SQL-Abstract-Pg-1.0
-    pathname: S/SR/SRI/SQL-Abstract-Pg-1.0.tar.gz
-    provides:
-      SQL::Abstract::Pg 1.0
-    requirements:
-      ExtUtils::MakeMaker 0
-      SQL::Abstract 2.0
-      perl 5.016
   Safe-Isa-1.000010
     pathname: E/ET/ETHER/Safe-Isa-1.000010.tar.gz
     provides:

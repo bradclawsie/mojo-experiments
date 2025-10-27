@@ -36,18 +36,13 @@ critic:
     @{{ with_perl5lib }}; \
     find t -name \*.t -print0 | xargs -0 {{ perlcritic }} --theme=tests
 
-# DBD::Pg requires OPTIMIZE tweaks up until v3.18.
-dbd-pg:
-    @{{ with_perl5lib }}; \
-    cpanm -l local --configure-args "OPTIMIZE='-std=gnu17'" DBD::Pg
-
 # Install carton dependencies; follows "carton" rule.
-deps: dbd-pg
+deps:
     @{{ with_perl5lib }}; \
     local/bin/carton install
 
 # Update all carton dependencies.
-update: dbd-pg
+update:
     @{{ with_perl5lib }}; \
     local/bin/carton update
 

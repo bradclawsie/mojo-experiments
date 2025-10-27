@@ -1,12 +1,9 @@
 requires 'App::perlimports';
 requires 'bareword::filehandles';
-requires 'Crypt::JWT';
 requires 'English';
 requires 'indirect';
 requires 'multidimensional';
 requires 'Mojolicious';
-requires 'Mojo::Pg';
-requires 'Mojo::Redis';
 requires 'Perl::Critic';
 requires 'Perl::Critic::Bangs';
 requires 'Perl::Critic::Community';
