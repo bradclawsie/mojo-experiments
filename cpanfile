@@ -1,5 +1,9 @@
 requires 'App::perlimports';
 requires 'bareword::filehandles';
+requires 'Cpanel::JSON::XS';
+requires 'CryptX';
+requires 'Crypt::Argon2';
+requires 'Crypt::JWT';
 requires 'English';
 requires 'indirect';
 requires 'multidimensional';

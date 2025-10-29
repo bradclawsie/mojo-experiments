@@ -146,6 +146,23 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  CPAN-Requirements-Dynamic-0.002
+    pathname: L/LE/LEONT/CPAN-Requirements-Dynamic-0.002.tar.gz
+    provides:
+      CPAN::Requirements::Dynamic 0.002
+    requirements:
+      CPAN::Meta::Prereqs 0
+      CPAN::Meta::Requirements::Range 0
+      Carp 0
+      ExtUtils::Config 0
+      ExtUtils::HasCompiler 0
+      ExtUtils::MakeMaker 0
+      IPC::Cmd 0
+      Parse::CPAN::Meta 0
+      Perl::OSType 0
+      perl 5.006
+      strict 0
+      warnings 0
   Call-Context-0.05
     pathname: F/FE/FELIPE/Call-Context-0.05.tar.gz
     provides:
@@ -294,6 +311,151 @@ DISTRIBUTIONS
       overload 0
       strict 0
       warnings 0
+  Crypt-Argon2-0.030
+    pathname: L/LE/LEONT/Crypt-Argon2-0.030.tar.gz
+    provides:
+      Crypt::Argon2 0.030
+    requirements:
+      Dist::Build 0.020
+      Dist::Build::Core 0
+      Dist::Build::XS 0
+      Dist::Build::XS::Conf 0
+      Exporter 5.57
+      Time::HiRes 0
+      XSLoader 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Crypt-JWT-0.037
+    pathname: M/MI/MIK/Crypt-JWT-0.037.tar.gz
+    provides:
+      Crypt::JWT 0.037
+      Crypt::KeyWrap 0.037
+    requirements:
+      Compress::Raw::Zlib 0
+      CryptX 0.067
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      JSON 0
+      Scalar::Util 0
+      Test::More 0.88
+      perl 5.006
+  CryptX-0.087
+    pathname: M/MI/MIK/CryptX-0.087.tar.gz
+    provides:
+      Crypt::AuthEnc 0.087
+      Crypt::AuthEnc::CCM 0.087
+      Crypt::AuthEnc::ChaCha20Poly1305 0.087
+      Crypt::AuthEnc::EAX 0.087
+      Crypt::AuthEnc::GCM 0.087
+      Crypt::AuthEnc::OCB 0.087
+      Crypt::Checksum 0.087
+      Crypt::Checksum::Adler32 0.087
+      Crypt::Checksum::CRC32 0.087
+      Crypt::Cipher 0.087
+      Crypt::Cipher::AES 0.087
+      Crypt::Cipher::Anubis 0.087
+      Crypt::Cipher::Blowfish 0.087
+      Crypt::Cipher::CAST5 0.087
+      Crypt::Cipher::Camellia 0.087
+      Crypt::Cipher::DES 0.087
+      Crypt::Cipher::DES_EDE 0.087
+      Crypt::Cipher::IDEA 0.087
+      Crypt::Cipher::KASUMI 0.087
+      Crypt::Cipher::Khazad 0.087
+      Crypt::Cipher::MULTI2 0.087
+      Crypt::Cipher::Noekeon 0.087
+      Crypt::Cipher::RC2 0.087
+      Crypt::Cipher::RC5 0.087
+      Crypt::Cipher::RC6 0.087
+      Crypt::Cipher::SAFERP 0.087
+      Crypt::Cipher::SAFER_K128 0.087
+      Crypt::Cipher::SAFER_K64 0.087
+      Crypt::Cipher::SAFER_SK128 0.087
+      Crypt::Cipher::SAFER_SK64 0.087
+      Crypt::Cipher::SEED 0.087
+      Crypt::Cipher::Serpent 0.087
+      Crypt::Cipher::Skipjack 0.087
+      Crypt::Cipher::Twofish 0.087
+      Crypt::Cipher::XTEA 0.087
+      Crypt::Digest 0.087
+      Crypt::Digest::BLAKE2b_160 0.087
+      Crypt::Digest::BLAKE2b_256 0.087
+      Crypt::Digest::BLAKE2b_384 0.087
+      Crypt::Digest::BLAKE2b_512 0.087
+      Crypt::Digest::BLAKE2s_128 0.087
+      Crypt::Digest::BLAKE2s_160 0.087
+      Crypt::Digest::BLAKE2s_224 0.087
+      Crypt::Digest::BLAKE2s_256 0.087
+      Crypt::Digest::CHAES 0.087
+      Crypt::Digest::Keccak224 0.087
+      Crypt::Digest::Keccak256 0.087
+      Crypt::Digest::Keccak384 0.087
+      Crypt::Digest::Keccak512 0.087
+      Crypt::Digest::MD2 0.087
+      Crypt::Digest::MD4 0.087
+      Crypt::Digest::MD5 0.087
+      Crypt::Digest::RIPEMD128 0.087
+      Crypt::Digest::RIPEMD160 0.087
+      Crypt::Digest::RIPEMD256 0.087
+      Crypt::Digest::RIPEMD320 0.087
+      Crypt::Digest::SHA1 0.087
+      Crypt::Digest::SHA224 0.087
+      Crypt::Digest::SHA256 0.087
+      Crypt::Digest::SHA384 0.087
+      Crypt::Digest::SHA3_224 0.087
+      Crypt::Digest::SHA3_256 0.087
+      Crypt::Digest::SHA3_384 0.087
+      Crypt::Digest::SHA3_512 0.087
+      Crypt::Digest::SHA512 0.087
+      Crypt::Digest::SHA512_224 0.087
+      Crypt::Digest::SHA512_256 0.087
+      Crypt::Digest::SHAKE 0.087
+      Crypt::Digest::Tiger192 0.087
+      Crypt::Digest::Whirlpool 0.087
+      Crypt::KeyDerivation 0.087
+      Crypt::Mac 0.087
+      Crypt::Mac::BLAKE2b 0.087
+      Crypt::Mac::BLAKE2s 0.087
+      Crypt::Mac::F9 0.087
+      Crypt::Mac::HMAC 0.087
+      Crypt::Mac::OMAC 0.087
+      Crypt::Mac::PMAC 0.087
+      Crypt::Mac::Pelican 0.087
+      Crypt::Mac::Poly1305 0.087
+      Crypt::Mac::XCBC 0.087
+      Crypt::Misc 0.087
+      Crypt::Mode 0.087
+      Crypt::Mode::CBC 0.087
+      Crypt::Mode::CFB 0.087
+      Crypt::Mode::CTR 0.087
+      Crypt::Mode::ECB 0.087
+      Crypt::Mode::OFB 0.087
+      Crypt::PK 0.087
+      Crypt::PK::DH 0.087
+      Crypt::PK::DSA 0.087
+      Crypt::PK::ECC 0.087
+      Crypt::PK::Ed25519 0.087
+      Crypt::PK::RSA 0.087
+      Crypt::PK::X25519 0.087
+      Crypt::PRNG 0.087
+      Crypt::PRNG::ChaCha20 0.087
+      Crypt::PRNG::Fortuna 0.087
+      Crypt::PRNG::RC4 0.087
+      Crypt::PRNG::Sober128 0.087
+      Crypt::PRNG::Yarrow 0.087
+      Crypt::Stream::ChaCha 0.087
+      Crypt::Stream::RC4 0.087
+      Crypt::Stream::Rabbit 0.087
+      Crypt::Stream::Salsa20 0.087
+      Crypt::Stream::Sober128 0.087
+      Crypt::Stream::Sosemanuk 0.087
+      CryptX 0.087
+      Math::BigInt::LTM 0.087
+    requirements:
+      ExtUtils::MakeMaker 0
+      Math::BigInt 0
+      perl 5.006
   Data-OptList-0.114
     pathname: R/RJ/RJBS/Data-OptList-0.114.tar.gz
     provides:
@@ -344,6 +506,57 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  Dist-Build-0.020
+    pathname: L/LE/LEONT/Dist-Build-0.020.tar.gz
+    provides:
+      Dist::Build 0.020
+      Dist::Build::Core 0.020
+      Dist::Build::DynamicPrereqs 0.020
+      Dist::Build::Serializer 0.020
+      Dist::Build::ShareDir 0.020
+      Dist::Build::XS 0.020
+      Dist::Build::XS::Alien 0.020
+      Dist::Build::XS::Conf 0.020
+      Dist::Build::XS::Export 0.020
+      Dist::Build::XS::Import 0.020
+      Dist::Build::XS::WriteConstants 0.020
+    requirements:
+      CPAN::Meta 0
+      CPAN::Meta::Merge 0
+      CPAN::Requirements::Dynamic 0.002
+      Carp 0
+      Exporter 5.57
+      ExtUtils::Builder::Action::Function 0
+      ExtUtils::Builder::Compiler 0.028
+      ExtUtils::Builder::Node 0
+      ExtUtils::Builder::ParseXS 0
+      ExtUtils::Builder::Planner 0.016
+      ExtUtils::Builder::Planner::Extension 0
+      ExtUtils::Builder::Serializer 0
+      ExtUtils::Builder::Util 0
+      ExtUtils::Config 0
+      ExtUtils::Helpers 0.028
+      ExtUtils::Install 0
+      ExtUtils::InstallPaths 0
+      ExtUtils::Manifest 0
+      File::Basename 0
+      File::Copy 0
+      File::Find 0
+      File::Path 0
+      File::ShareDir::Tiny 0
+      File::Spec::Functions 0
+      Getopt::Long 2.36
+      List::Util 1.33
+      Parse::CPAN::Meta 0
+      Perl::OSType 0
+      Pod::Man 0
+      TAP::Harness::Env 0
+      Text::ParseWords 0
+      parent 0
+      perl 5.010
+      strict 0
+      version 0
+      warnings 0
   Dist-CheckConflicts-0.11
     pathname: D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
     provides:
@@ -393,6 +606,94 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 6.17
       perl 5.006001
+  ExtUtils-Builder-0.017
+    pathname: L/LE/LEONT/ExtUtils-Builder-0.017.tar.gz
+    provides:
+      ExtUtils::Builder 0.017
+      ExtUtils::Builder::Action 0.017
+      ExtUtils::Builder::Action::Code 0.017
+      ExtUtils::Builder::Action::Command 0.017
+      ExtUtils::Builder::Action::Composite 0.017
+      ExtUtils::Builder::Action::Function 0.017
+      ExtUtils::Builder::Action::Perl 0.017
+      ExtUtils::Builder::Action::Primitive 0.017
+      ExtUtils::Builder::FileSet 0.017
+      ExtUtils::Builder::FileSet::Filter 0.017
+      ExtUtils::Builder::FileSet::Free 0.017
+      ExtUtils::Builder::FileSet::Subst 0.017
+      ExtUtils::Builder::MakeMaker 0.017
+      ExtUtils::Builder::Node 0.017
+      ExtUtils::Builder::Plan 0.017
+      ExtUtils::Builder::Planner 0.017
+      ExtUtils::Builder::Planner::Extension 0.017
+      ExtUtils::Builder::Serializer 0.017
+      ExtUtils::Builder::Util 0.017
+    requirements:
+      Carp 0
+      Data::Dumper 0
+      Exporter 5.57
+      ExtUtils::Config 0
+      ExtUtils::Config::MakeMaker 0
+      ExtUtils::MakeMaker 6.68
+      ExtUtils::Manifest 0
+      File::Basename 0
+      File::Spec 0
+      File::Spec::Unix 0
+      List::Util 1.45
+      Perl::OSType 0
+      Scalar::Util 0
+      base 0
+      parent 0
+      perl 5.010
+      strict 0
+      version 0
+      warnings 0
+  ExtUtils-Builder-Compiler-0.032
+    pathname: L/LE/LEONT/ExtUtils-Builder-Compiler-0.032.tar.gz
+    provides:
+      ExtUtils::Builder::ArgumentCollector 0.032
+      ExtUtils::Builder::AutoDetect::C 0.032
+      ExtUtils::Builder::AutoDetect::Cpp 0.032
+      ExtUtils::Builder::Binary 0.032
+      ExtUtils::Builder::Compiler 0.032
+      ExtUtils::Builder::Compiler::MSVC 0.032
+      ExtUtils::Builder::Compiler::Unixy 0.032
+      ExtUtils::Builder::Compiler::VMS 0.032
+      ExtUtils::Builder::Conf 0.032
+      ExtUtils::Builder::Linker 0.032
+      ExtUtils::Builder::Linker::Ar 0.032
+      ExtUtils::Builder::Linker::COFF 0.032
+      ExtUtils::Builder::Linker::ELF::Any 0.032
+      ExtUtils::Builder::Linker::ELF::GCC 0.032
+      ExtUtils::Builder::Linker::Mach::GCC 0.032
+      ExtUtils::Builder::Linker::PE::GCC 0.032
+      ExtUtils::Builder::Linker::PE::MSVC 0.032
+      ExtUtils::Builder::Linker::Unixy 0.032
+      ExtUtils::Builder::Linker::XCOFF 0.032
+      ExtUtils::Builder::MultiLingual 0.032
+      ExtUtils::Builder::ParseXS 0.032
+      ExtUtils::Builder::Profile::Perl 0.032
+    requirements:
+      Carp 0
+      DynaLoader 0
+      ExtUtils::Builder 0.016
+      ExtUtils::Builder::Action::Command 0
+      ExtUtils::Builder::Node 0
+      ExtUtils::Builder::Planner 0.007
+      ExtUtils::Builder::Planner::Extension 0
+      ExtUtils::Builder::Util 0
+      ExtUtils::Config 0.007
+      ExtUtils::Helpers 0.027
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Spec::Functions 0
+      File::Temp 0
+      Perl::OSType 0
+      parent 0
+      perl 5.010
+      sort 0
+      strict 0
+      warnings 0
   ExtUtils-Config-0.010
     pathname: L/LE/LEONT/ExtUtils-Config-0.010.tar.gz
     provides:
@@ -415,6 +716,23 @@ DISTRIBUTIONS
       File::Spec 0
       IO::File 0
       perl 5.006
+  ExtUtils-HasCompiler-0.025
+    pathname: L/LE/LEONT/ExtUtils-HasCompiler-0.025.tar.gz
+    provides:
+      ExtUtils::HasCompiler 0.025
+    requirements:
+      Carp 0
+      DynaLoader 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      ExtUtils::Mksymlists 0
+      File::Basename 0
+      File::Spec::Functions 0
+      File::Temp 0
+      base 0
+      perl 5.006
+      strict 0
+      warnings 0
   ExtUtils-Helpers-0.028
     pathname: L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz
     provides:
@@ -487,6 +805,18 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       File::Spec 0
       IO::Dir 0
+      perl 5.006
+      strict 0
+      warnings 0
+  File-ShareDir-Tiny-0.001
+    pathname: L/LE/LEONT/File-ShareDir-Tiny-0.001.tar.gz
+    provides:
+      File::ShareDir::Tiny 0.001
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Spec::Functions 0
       perl 5.006
       strict 0
       warnings 0
@@ -575,6 +905,14 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008001
+  JSON-4.10
+    pathname: I/IS/ISHIGAKI/JSON-4.10.tar.gz
+    provides:
+      JSON 4.10
+      JSON::Backend::PP 4.10
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
   Lingua-EN-Inflect-1.905
     pathname: D/DC/DCONWAY/Lingua-EN-Inflect-1.905.tar.gz
     provides:
