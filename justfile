@@ -71,8 +71,8 @@ run *CMD:
     {{ CMD }}
 
 # Run all tests.
-test:
-    find t -name \*.t -print0 | xargs -0 {{ YATH }}
+test BASE:
+    pushd {{ BASE }} && find t -name \*.t -print0 | xargs -0 {{ YATH }}
 
 # perltidy on all files.
 tidy:
@@ -82,10 +82,10 @@ tidy:
     @find -name \*tdy -delete
     @find -name \*.ERR -delete
 
-# Run a single test; e.g. "just yath t/00-test.t".
-yath TEST:
-    {{ YATH }} {{ TEST }}
+# Run a single test; e.g. "just yath experiment0 t/basic.t".
+yath BASE TEST:
+    pushd {{ BASE }} && {{ YATH }} {{ TEST }}
 
-# Set up everything for development from nothing.
-setup:
-    just create-users create-databases alter-grants apply-schema carton deps
+daemon BASE:
+    pushd {{ BASE }} && ./script/{{ BASE }} daemon
+
