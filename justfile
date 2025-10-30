@@ -66,14 +66,6 @@ imports:
 repl:
     perl -de 0
 
-# Run a command.
-run *CMD:
-    {{ CMD }}
-
-# Run all tests.
-test BASE:
-    pushd {{ BASE }} && find t -name \*.t -print0 | xargs -0 {{ YATH }}
-
 # perltidy on all files.
 tidy:
     find . -name \*.pm -print0 | xargs -0 {{ PERLTIDY }} 2>/dev/null
@@ -82,10 +74,22 @@ tidy:
     @find -name \*tdy -delete
     @find -name \*.ERR -delete
 
+# -- Experiment-specific rules.
+
+# Run the webserver.
+daemon BASE:
+    pushd {{ BASE }} && ./script/{{ BASE }} daemon
+
+# Run a command.
+# For example: just run experiment1 ./script/experiment1 daemon
+run BASE *CMD:
+    pushd {{ BASE }} && {{ CMD }}
+
+# Run all tests.
+test BASE:
+    pushd {{ BASE }} && find t -name \*.t -print0 | xargs -0 {{ YATH }}
+
 # Run a single test; e.g. "just yath experiment0 t/basic.t".
 yath BASE TEST:
     pushd {{ BASE }} && {{ YATH }} {{ TEST }}
-
-daemon BASE:
-    pushd {{ BASE }} && ./script/{{ BASE }} daemon
 
